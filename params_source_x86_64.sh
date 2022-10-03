@@ -1,5 +1,5 @@
 ## JDK
-JDK_SOURCE='https://cdn-thirdparty.starrocks.com/openjdk-8u322-b06-linux-x64.tar.gz'
+JDK_SOURCE='https://cdn.azul.com/zulu/bin/zulu11.58.23-ca-jdk11.0.16.1-linux_x64.tar.gz'
 
 ## llvm
 LLVM_SOURCE='http://cdn-thirdparty.starrocks.com/clang-format'
@@ -9,7 +9,7 @@ CMAKE_SOURCE='https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3
 
 ## GCC
 GCC_VERSION=10.3.0
-GCC_URL="https://mirrors.ustc.edu.cn/gnu/gcc/gcc-$GCC_VERSION"
+GCC_URL="http://ftp.gnu.org/gnu/gcc/gcc-$GCC_VERSION"
 
 ## MAVEN
 MAVEN_VERSION=3.6.3

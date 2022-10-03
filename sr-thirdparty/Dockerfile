@@ -1,4 +1,5 @@
-FROM docker.io/library/centos:centos7.9.2009
+FROM docker.io/library/ubuntu:20.04
+# FROM docker.io/library/centos:centos7.9.2009
 
 ENV DEFAULT_DIR /var/local
 ARG PROXY
@@ -38,7 +39,7 @@ ENV https_proxy ""
 COPY llvm ${DEFAULT_DIR}/llvm
 ENV PATH "$PATH:/var/local/llvm/bin"
 
-COPY thirdparty ${DEFAULT_DIR}/thirdparty 
+COPY thirdparty ${DEFAULT_DIR}/thirdparty
 
 # env
 ENV STARROCKS_THIRDPARTY /var/local/thirdparty

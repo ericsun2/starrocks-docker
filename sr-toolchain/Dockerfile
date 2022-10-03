@@ -1,4 +1,5 @@
-FROM docker.io/library/centos:centos7.9.2009
+FROM docker.io/library/ubuntu:20.04
+# FROM docker.io/library/centos:centos7.9.2009
 
 ENV DEFAULT_DIR /var/local
 ARG PROXY
