@@ -5,6 +5,7 @@ if [ -f /etc/redhat-release ]; then
   $INSTALLER install -y epel-release
   $INSTALLER install -y redhat-lsb-core
 elif [ -f /etc/lsb-release ]; then
+  export DEBIAN_FRONTEND=noninteractive
   INSTALLER=apt-get
   $INSTALLER update
   $INSTALLER install -y lsb-core coreutils
